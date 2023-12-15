@@ -1,38 +1,216 @@
 .App {
-  text-align: center;
+	/* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.masterhead {
+	/* background-color: green; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.company-banner {
+	display: inline-flex;
+	padding: 30px;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub-head {
+	width: 1500px;
+	/* background-color: blue; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+
+.block {
+	flex: 1;
+	/* Distributes the available space evenly among blocks */
+	max-width: 400px;
+	height: auto;
+	/* background-color: lightblue; */
+	margin: 0 5px;
+	display: flex;
+	justify-content: center;
+	/* Aligns content horizontally */
+	align-items: center;
+	/* Aligns content vertically */
+	flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-name {
+	margin-top: 20px;
+	margin-left: -180px;
+}
+
+.small-logo {
+	height: 100px;
+}
+
+.hospital-name {
+	margin-top: 10px;
+}
+
+.hello {
+	color: rgb(74, 112, 17);
+	font-size: 30px;
+}
+
+.time-date {
+	margin-right: -250px;
+}
+
+.diet-container {
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.diet-title {
+	color: red;
+	text-align: center;
+	border: 5px solid red;
+	width: 80%;
+	padding: 10px;
+	font-size: 28px;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+th,
+td {
+	width: calc(100% / 7);
+	/* Divide the table width equally among columns */
+	text-align: center;
+}
+
+.eight-columns {
+	width: 1500px;
+	background-color: pink;
+	font-size: 20px;
+	;
+	margin: auto;
+	justify-content: center;
+	color: black;
+}
+
+.outer-menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0px ;
+}
+
+.menu-container {
+	/* background-color: rebeccapurple; */
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px;
+	margin-top: 0;
+	padding: 10px;
+	align-items: center;
+}
+
+
+.meal {
+	color: green;
+	font-size: 26px;
+	font-weight: 900;
+	margin: 20px;
+
+}
+
+.drinks-additions {
+	color: black;
+	font-weight: normal;
+	font-size: 18px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	padding: 10px;
+}
+
+.drink-items,
+.addition-items {
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.drinks,
+.additions {
+	text-decoration: underline;
+}
+
+.main {
+	text-decoration: underline;
+	padding: 20px;
+	
+}
+
+.sides {
+	text-decoration: underline;
+	padding: 20px;
+}
+
+.replacement {
+	padding: 20px;
+}
+
+.outer-footer-container{
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	
+}
+
+.legend-container{
+	border: 1px solid green;
+	display: flex;
+	padding:10px;
+	margin:20px;
+	flex-direction: column;
+
+}
+
+.legend{
+	text-decoration: underline;
+	font-size: 24px;
+}
+
+.icon-desc{
+	display: flex;
+
+}
+
+.icon{
+padding:12px;
+}
+ 
+.submit-container{
+display: flex;
+align-items:flex-end;
+margin: 20px;
+}
+
+.bigger-button{
+	font-size: 18px; /* Increase font size */
+    padding: 10px 20px;
 }
