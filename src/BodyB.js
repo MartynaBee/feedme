@@ -1,9 +1,10 @@
 import React from "react";
+import { Checkbox } from 'antd';
 
 const BodyB = ({ }) => {
 
     return (
-        <div className="outer-menu-container">
+        <div className="menu"><div className="outer-menu-container">
             <div className="menu-container">
 
                 <div className="main-sides">
@@ -101,6 +102,7 @@ const BodyB = ({ }) => {
 
 
             </div>
+        </div>
         </div>
     )
 }

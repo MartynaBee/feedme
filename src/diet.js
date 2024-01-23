@@ -1,112 +1,29 @@
-import React from "react";
+import React, { useState  } from "react";
+import DietDetail from "./DietDetail";
+import { Checkbox } from "antd";
 
+const Diet = ({ diet }) => {
 
-const Diet = ({ }) => {
+    const [isActive, setIsActive] = useState(false);
+    const onChange = (e) => {
+        setIsActive(e.target.checked);
+    };
+
+    const listOfDietDetailComponent = diet.listOfDietDetails.map(fiDietDetail =>
+        <DietDetail dietDetail={fiDietDetail} />
+    );
+
 
     return (
-        <div className="diet-container">
-            <div className="diet-title">
-                <div>
-                    <h1>DIETARY INFORMATION</h1>
-                </div>
+        <div>
 
-                <div className="eight-columns">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" />Allergic</th>
-                                <th><input type="checkbox" />Cardiac</th>
-                                <th><input type="checkbox" />Diabetic</th>
-                                <th><input type="checkbox" />Gluten-free</th>
-                                <th><input type="checkbox" />Lactose-free</th>
-                                <th><input type="checkbox" />Vegan</th>
-                                <th><input type="checkbox" />Vegetarian</th>
-                                <th><input type="checkbox" />Dysphagic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox"></input>egg</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>liquid-thin</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></input>fish</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>nectar-thick</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></input>nut</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>honey-thick</td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"></input>soy</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>pudding-thick</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>pureed</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>minced</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input type="checkbox"></input>soft</td>
-                            </tr>
-
-
-                        </tbody>
-
-                    </table>
-                </div>
-
-
+            <div>
+                <Checkbox onChange={onChange}>{diet.dietType}</Checkbox>
             </div>
+            {isActive ? listOfDietDetailComponent : null}
         </div>
-    )
 
+    )
 }
 
-export default Diet; 
+export default Diet

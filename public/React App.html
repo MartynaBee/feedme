@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.App {
+	/* text-align: center; */
+}
+
+.masterhead {
+	/* background-color: green; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.company-banner {
+	display: inline-flex;
+	padding: 30px;
+	align-items: center;
+}
+
+.sub-head {
+	width: 1500px;
+	/* background-color: blue; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: auto;
+}
+
+
+.block {
+	flex: 1 1;
+	/* Distributes the available space evenly among blocks */
+	max-width: 400px;
+	height: auto;
+	/* background-color: lightblue; */
+	margin: 0 5px;
+	display: flex;
+	justify-content: center;
+	/* Aligns content horizontally */
+	align-items: center;
+	/* Aligns content vertically */
+	flex-direction: column;
+}
+
+.logo-name {
+	margin-top: 20px;
+	margin-left: -180px;
+}
+
+.small-logo {
+	height: 100px;
+}
+
+.hospital-name {
+	margin-top: 10px;
+}
+
+.hello {
+	color: rgb(74, 112, 17);
+	font-size: 30px;
+}
+
+.time-date {
+	margin-right: -250px;
+}
+
+
+
+.calendar {
+	width: 350px;
+	background: greenyellow;
+	border: 1px solid #adad2f;
+	margin: 25px;
+}
+
+.selected-date {
+	font-size: 18px;
+	display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  margin: 5px;
+}
+
+.go-to {
+	font-size: 14px;
+	background-color: green;
+	
+	
+
+}
+
+.diet-container {
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.diet-title {
+	color: red;
+	text-align: center;
+	border: 5px solid red;
+	width: 80%;
+	padding: 10px;
+	font-size: 28px;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+th,
+td {
+	width: calc(100% / 7);
+	/* Divide the table width equally among columns */
+	text-align: center;
+}
+
+.eight-columns {
+	width: 1500px;
+	background-color: pink;
+	font-size: 20px;
+	;
+	margin: auto;
+	justify-content: center;
+	color: black;
+}
+
+.outer-menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0px;
+}
+
+.menu-container {
+	/* background-color: rebeccapurple; */
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px;
+	margin-top: 0;
+	padding: 10px;
+	align-items: center;
+}
+
+
+.meal {
+	color: green;
+	font-size: 26px;
+	font-weight: 900;
+	margin: 20px;
+
+}
+
+.drinks-additions {
+	color: black;
+	font-weight: normal;
+	font-size: 18px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	padding: 10px;
+}
+
+.drink-items,
+.addition-items {
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.drinks,
+.additions {
+	text-decoration: underline;
+}
+
+.main {
+	text-decoration: underline;
+	padding: 20px;
+
+}
+
+.sides {
+	text-decoration: underline;
+	padding: 20px;
+}
+
+.replacement {
+	padding: 20px;
+}
+
+.outer-footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+
+}
+
+.legend-container {
+	border: 1px solid green;
+	display: flex;
+	padding: 10px;
+	margin: 20px;
+	flex-direction: column;
+
+}
+
+.legend {
+	text-decoration: underline;
+	font-size: 24px;
+}
+
+.icon-desc {
+	display: flex;
+
+}
+
+.icon {
+	padding: 12px;
+}
+
+.submit-container {
+	display: flex;
+	align-items: flex-end;
+	margin: 20px;
+}
+
+.bigger-button {
+	font-size: 18px;
+	/* Increase font size */
+	padding: 10px 20px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0Msd0JBQXdCO0FBQ3pCOztBQUVBO0NBQ0MsNkJBQTZCO0NBQzdCLHlDQUF5QztDQUN6QyxlQUFlO0NBQ2Ysa0JBQWtCO0NBQ2xCLGFBQWE7Q0FDYix1QkFBdUI7Q0FDdkIsbUJBQW1CO0NBQ25CLHNCQUFzQjtBQUN2Qjs7QUFFQTtDQUNDLG9CQUFvQjtDQUNwQixhQUFhO0NBQ2IsbUJBQW1CO0FBQ3BCOztBQUVBO0NBQ0MsYUFBYTtDQUNiLDRCQUE0QjtDQUM1QixhQUFhO0NBQ2IsOEJBQThCO0NBQzlCLG1CQUFtQjtDQUNuQixZQUFZO0NBQ1osWUFBWTtBQUNiOzs7QUFHQTtDQUNDLFNBQU87Q0FDUCx3REFBd0Q7Q0FDeEQsZ0JBQWdCO0NBQ2hCLFlBQVk7Q0FDWixpQ0FBaUM7Q0FDakMsYUFBYTtDQUNiLGFBQWE7Q0FDYix1QkFBdUI7Q0FDdkIsZ0NBQWdDO0NBQ2hDLG1CQUFtQjtDQUNuQiw4QkFBOEI7Q0FDOUIsc0JBQXNCO0FBQ3ZCOztBQUVBO0NBQ0MsZ0JBQWdCO0NBQ2hCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDLGFBQWE7QUFDZDs7QUFFQTtDQUNDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLHVCQUF1QjtDQUN2QixlQUFlO0FBQ2hCOztBQUVBO0NBQ0Msb0JBQW9CO0FBQ3JCOzs7O0FBSUE7Q0FDQyxZQUFZO0NBQ1osdUJBQXVCO0NBQ3ZCLHlCQUF5QjtDQUN6QixZQUFZO0FBQ2I7O0FBRUE7Q0FDQyxlQUFlO0NBQ2YsYUFBYTtFQUNaLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLFdBQVc7QUFDYjs7QUFFQTtDQUNDLGVBQWU7Q0FDZix1QkFBdUI7Ozs7QUFJeEI7O0FBRUE7Q0FDQyw4QkFBOEI7Q0FDOUIsYUFBYTtDQUNiLHVCQUF1QjtDQUN2QixtQkFBbUI7O0FBRXBCOztBQUVBO0NBQ0MsVUFBVTtDQUNWLGtCQUFrQjtDQUNsQixxQkFBcUI7Q0FDckIsVUFBVTtDQUNWLGFBQWE7Q0FDYixlQUFlO0FBQ2hCOztBQUVBO0NBQ0MsV0FBVztDQUNYLG1CQUFtQjtBQUNwQjs7QUFFQTs7Q0FFQyxxQkFBcUI7Q0FDckIsaURBQWlEO0NBQ2pELGtCQUFrQjtBQUNuQjs7QUFFQTtDQUNDLGFBQWE7Q0FDYixzQkFBc0I7Q0FDdEIsZUFBZTs7Q0FFZixZQUFZO0NBQ1osdUJBQXVCO0NBQ3ZCLFlBQVk7QUFDYjs7QUFFQTtDQUNDLGFBQWE7Q0FDYix1QkFBdUI7Q0FDdkIsbUJBQW1CO0NBQ25CLGtCQUFrQjtBQUNuQjs7QUFFQTtDQUNDLHFDQUFxQztDQUNyQyxVQUFVO0NBQ1YsYUFBYTtDQUNiLDZCQUE2QjtDQUM3QixZQUFZO0NBQ1osYUFBYTtDQUNiLGFBQWE7Q0FDYixtQkFBbUI7QUFDcEI7OztBQUdBO0NBQ0MsWUFBWTtDQUNaLGVBQWU7Q0FDZixnQkFBZ0I7Q0FDaEIsWUFBWTs7QUFFYjs7QUFFQTtDQUNDLFlBQVk7Q0FDWixtQkFBbUI7Q0FDbkIsZUFBZTtDQUNmLGdCQUFnQjtDQUNoQixhQUFhO0NBQ2IsOEJBQThCO0NBQzlCLFlBQVk7Q0FDWixhQUFhO0FBQ2Q7O0FBRUE7O0NBRUMsWUFBWTtDQUNaLG1CQUFtQjtDQUNuQixlQUFlO0NBQ2YsZ0JBQWdCO0NBQ2hCLG9CQUFvQjtDQUNwQixzQkFBc0I7QUFDdkI7O0FBRUE7O0NBRUMsMEJBQTBCO0FBQzNCOztBQUVBO0NBQ0MsMEJBQTBCO0NBQzFCLGFBQWE7O0FBRWQ7O0FBRUE7Q0FDQywwQkFBMEI7Q0FDMUIsYUFBYTtBQUNkOztBQUVBO0NBQ0MsYUFBYTtBQUNkOztBQUVBO0NBQ0MsYUFBYTtDQUNiLDZCQUE2QjtDQUM3QixrQkFBa0I7O0FBRW5COztBQUVBO0NBQ0MsdUJBQXVCO0NBQ3ZCLGFBQWE7Q0FDYixhQUFhO0NBQ2IsWUFBWTtDQUNaLHNCQUFzQjs7QUFFdkI7O0FBRUE7Q0FDQywwQkFBMEI7Q0FDMUIsZUFBZTtBQUNoQjs7QUFFQTtDQUNDLGFBQWE7O0FBRWQ7O0FBRUE7Q0FDQyxhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyxhQUFhO0NBQ2IscUJBQXFCO0NBQ3JCLFlBQVk7QUFDYjs7QUFFQTtDQUNDLGVBQWU7Q0FDZix1QkFBdUI7Q0FDdkIsa0JBQWtCO0FBQ25CIiwic291cmNlc0NvbnRlbnQiOlsiLkFwcCB7XG5cdC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbn1cblxuLm1hc3RlcmhlYWQge1xuXHQvKiBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgKi9cblx0Zm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7XG5cdGZvbnQtc2l6ZTogMjBweDtcblx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRkaXNwbGF5OiBmbGV4O1xuXHRqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcblx0YWxpZ24taXRlbXM6IGNlbnRlcjtcblx0ZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmNvbXBhbnktYmFubmVyIHtcblx0ZGlzcGxheTogaW5saW5lLWZsZXg7XG5cdHBhZGRpbmc6IDMwcHg7XG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5zdWItaGVhZCB7XG5cdHdpZHRoOiAxNTAwcHg7XG5cdC8qIGJhY2tncm91bmQtY29sb3I6IGJsdWU7ICovXG5cdGRpc3BsYXk6IGZsZXg7XG5cdGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcblx0YWxpZ24taXRlbXM6IGNlbnRlcjtcblx0bWFyZ2luOiBhdXRvO1xuXHRoZWlnaHQ6IGF1dG87XG59XG5cblxuLmJsb2NrIHtcblx0ZmxleDogMTtcblx0LyogRGlzdHJpYnV0ZXMgdGhlIGF2YWlsYWJsZSBzcGFjZSBldmVubHkgYW1vbmcgYmxvY2tzICovXG5cdG1heC13aWR0aDogNDAwcHg7XG5cdGhlaWdodDogYXV0bztcblx0LyogYmFja2dyb3VuZC1jb2xvcjogbGlnaHRibHVlOyAqL1xuXHRtYXJnaW46IDAgNXB4O1xuXHRkaXNwbGF5OiBmbGV4O1xuXHRqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcblx0LyogQWxpZ25zIGNvbnRlbnQgaG9yaXpvbnRhbGx5ICovXG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cdC8qIEFsaWducyBjb250ZW50IHZlcnRpY2FsbHkgKi9cblx0ZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmxvZ28tbmFtZSB7XG5cdG1hcmdpbi10b3A6IDIwcHg7XG5cdG1hcmdpbi1sZWZ0OiAtMTgwcHg7XG59XG5cbi5zbWFsbC1sb2dvIHtcblx0aGVpZ2h0OiAxMDBweDtcbn1cblxuLmhvc3BpdGFsLW5hbWUge1xuXHRtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uaGVsbG8ge1xuXHRjb2xvcjogcmdiKDc0LCAxMTIsIDE3KTtcblx0Zm9udC1zaXplOiAzMHB4O1xufVxuXG4udGltZS1kYXRlIHtcblx0bWFyZ2luLXJpZ2h0OiAtMjUwcHg7XG59XG5cblxuXG4uY2FsZW5kYXIge1xuXHR3aWR0aDogMzUwcHg7XG5cdGJhY2tncm91bmQ6IGdyZWVueWVsbG93O1xuXHRib3JkZXI6IDFweCBzb2xpZCAjYWRhZDJmO1xuXHRtYXJnaW46IDI1cHg7XG59XG5cbi5zZWxlY3RlZC1kYXRlIHtcblx0Zm9udC1zaXplOiAxOHB4O1xuXHRkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyOyBcbiAgdGV4dC1hbGlnbjogY2VudGVyOyBcbiAgbWFyZ2luOiA1cHg7XG59XG5cbi5nby10byB7XG5cdGZvbnQtc2l6ZTogMTRweDtcblx0YmFja2dyb3VuZC1jb2xvcjogZ3JlZW47XG5cdFxuXHRcblxufVxuXG4uZGlldC1jb250YWluZXIge1xuXHQvKiBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7ICovXG5cdGRpc3BsYXk6IGZsZXg7XG5cdGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXHRhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5cbi5kaWV0LXRpdGxlIHtcblx0Y29sb3I6IHJlZDtcblx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRib3JkZXI6IDVweCBzb2xpZCByZWQ7XG5cdHdpZHRoOiA4MCU7XG5cdHBhZGRpbmc6IDEwcHg7XG5cdGZvbnQtc2l6ZTogMjhweDtcbn1cblxudGFibGUge1xuXHR3aWR0aDogMTAwJTtcblx0dGFibGUtbGF5b3V0OiBmaXhlZDtcbn1cblxudGgsXG50ZCB7XG5cdHdpZHRoOiBjYWxjKDEwMCUgLyA3KTtcblx0LyogRGl2aWRlIHRoZSB0YWJsZSB3aWR0aCBlcXVhbGx5IGFtb25nIGNvbHVtbnMgKi9cblx0dGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uZWlnaHQtY29sdW1ucyB7XG5cdHdpZHRoOiAxNTAwcHg7XG5cdGJhY2tncm91bmQtY29sb3I6IHBpbms7XG5cdGZvbnQtc2l6ZTogMjBweDtcblx0O1xuXHRtYXJnaW46IGF1dG87XG5cdGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXHRjb2xvcjogYmxhY2s7XG59XG5cbi5vdXRlci1tZW51LWNvbnRhaW5lciB7XG5cdGRpc3BsYXk6IGZsZXg7XG5cdGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXHRhbGlnbi1pdGVtczogY2VudGVyO1xuXHRtYXJnaW4tYm90dG9tOiAwcHg7XG59XG5cbi5tZW51LWNvbnRhaW5lciB7XG5cdC8qIGJhY2tncm91bmQtY29sb3I6IHJlYmVjY2FwdXJwbGU7ICovXG5cdHdpZHRoOiA4MCU7XG5cdGRpc3BsYXk6IGZsZXg7XG5cdGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuXHRtYXJnaW46IDIwcHg7XG5cdG1hcmdpbi10b3A6IDA7XG5cdHBhZGRpbmc6IDEwcHg7XG5cdGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLm1lYWwge1xuXHRjb2xvcjogZ3JlZW47XG5cdGZvbnQtc2l6ZTogMjZweDtcblx0Zm9udC13ZWlnaHQ6IDkwMDtcblx0bWFyZ2luOiAyMHB4O1xuXG59XG5cbi5kcmlua3MtYWRkaXRpb25zIHtcblx0Y29sb3I6IGJsYWNrO1xuXHRmb250LXdlaWdodDogbm9ybWFsO1xuXHRmb250LXNpemU6IDE4cHg7XG5cdGZvbnQtd2VpZ2h0OiA1MDA7XG5cdGRpc3BsYXk6IGZsZXg7XG5cdGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcblx0d2lkdGg6IDIwMHB4O1xuXHRwYWRkaW5nOiAxMHB4O1xufVxuXG4uZHJpbmstaXRlbXMsXG4uYWRkaXRpb24taXRlbXMge1xuXHRjb2xvcjogYmxhY2s7XG5cdGZvbnQtd2VpZ2h0OiBub3JtYWw7XG5cdGZvbnQtc2l6ZTogMTRweDtcblx0Zm9udC13ZWlnaHQ6IDMwMDtcblx0ZGlzcGxheTogaW5saW5lLWZsZXg7XG5cdGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG5cbi5kcmlua3MsXG4uYWRkaXRpb25zIHtcblx0dGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG59XG5cbi5tYWluIHtcblx0dGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG5cdHBhZGRpbmc6IDIwcHg7XG5cbn1cblxuLnNpZGVzIHtcblx0dGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG5cdHBhZGRpbmc6IDIwcHg7XG59XG5cbi5yZXBsYWNlbWVudCB7XG5cdHBhZGRpbmc6IDIwcHg7XG59XG5cbi5vdXRlci1mb290ZXItY29udGFpbmVyIHtcblx0ZGlzcGxheTogZmxleDtcblx0anVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG5cdHRleHQtYWxpZ246IGNlbnRlcjtcblxufVxuXG4ubGVnZW5kLWNvbnRhaW5lciB7XG5cdGJvcmRlcjogMXB4IHNvbGlkIGdyZWVuO1xuXHRkaXNwbGF5OiBmbGV4O1xuXHRwYWRkaW5nOiAxMHB4O1xuXHRtYXJnaW46IDIwcHg7XG5cdGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG5cbn1cblxuLmxlZ2VuZCB7XG5cdHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuXHRmb250LXNpemU6IDI0cHg7XG59XG5cbi5pY29uLWRlc2Mge1xuXHRkaXNwbGF5OiBmbGV4O1xuXG59XG5cbi5pY29uIHtcblx0cGFkZGluZzogMTJweDtcbn1cblxuLnN1Ym1pdC1jb250YWluZXIge1xuXHRkaXNwbGF5OiBmbGV4O1xuXHRhbGlnbi1pdGVtczogZmxleC1lbmQ7XG5cdG1hcmdpbjogMjBweDtcbn1cblxuLmJpZ2dlci1idXR0b24ge1xuXHRmb250LXNpemU6IDE4cHg7XG5cdC8qIEluY3JlYXNlIGZvbnQgc2l6ZSAqL1xuXHRwYWRkaW5nOiAxMHB4IDIwcHg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="header"><div class="masterhead"><div class="company-banner"><img src="./React App_files/WBlogo.png"></div><div class="sub-head"><div class="block"><div class="logo-name"><img src="./React App_files/st.peter.jpeg" class="small-logo"><p class="hospital-name">St Peter Hospital</p></div></div><div class="block"><div class="hello"><p>Hello, John Doedoedorere!</p></div></div><div class="block"><div class="time-date"><p>12/20/2023</p><p>10:22:39 AM</p></div></div></div><div class="calendar"><div class="calendar-container"><div class="react-calendar"><div class="react-calendar__navigation"><button aria-label="" class="react-calendar__navigation__arrow react-calendar__navigation__prev2-button" type="button">«</button><button aria-label="" class="react-calendar__navigation__arrow react-calendar__navigation__prev-button" type="button">‹</button><button aria-label="" class="react-calendar__navigation__label" type="button" style="flex-grow: 1;"><span class="react-calendar__navigation__label__labelText react-calendar__navigation__label__labelText--from">December 2023</span></button><button aria-label="" class="react-calendar__navigation__arrow react-calendar__navigation__next-button" type="button">›</button><button aria-label="" class="react-calendar__navigation__arrow react-calendar__navigation__next2-button" type="button">»</button></div><div class="react-calendar__viewContainer"><div class="react-calendar__month-view"><div style="display: flex; align-items: flex-end;"><div style="flex-grow: 1; width: 100%;"><div class="react-calendar__month-view__weekdays" style="display: flex; flex-wrap: nowrap;"><div class="react-calendar__month-view__weekdays__weekday" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Monday" title="Monday">Mon</abbr></div><div class="react-calendar__month-view__weekdays__weekday" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Tuesday" title="Tuesday">Tue</abbr></div><div class="react-calendar__month-view__weekdays__weekday react-calendar__month-view__weekdays__weekday--current" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Wednesday" title="Wednesday">Wed</abbr></div><div class="react-calendar__month-view__weekdays__weekday" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Thursday" title="Thursday">Thu</abbr></div><div class="react-calendar__month-view__weekdays__weekday" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Friday" title="Friday">Fri</abbr></div><div class="react-calendar__month-view__weekdays__weekday react-calendar__month-view__weekdays__weekday--weekend" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Saturday" title="Saturday">Sat</abbr></div><div class="react-calendar__month-view__weekdays__weekday react-calendar__month-view__weekdays__weekday--weekend" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="Sunday" title="Sunday">Sun</abbr></div></div><div class="react-calendar__month-view__days" style="display: flex; flex-wrap: wrap;"><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="November 27, 2023">27</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="November 28, 2023">28</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="November 29, 2023">29</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="November 30, 2023">30</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 1, 2023">1</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 2, 2023">2</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 3, 2023">3</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 4, 2023">4</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 5, 2023">5</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 6, 2023">6</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 7, 2023">7</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 8, 2023">8</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 9, 2023">9</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 10, 2023">10</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 11, 2023">11</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 12, 2023">12</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 13, 2023">13</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 14, 2023">14</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 15, 2023">15</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 16, 2023">16</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 17, 2023">17</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 18, 2023">18</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 19, 2023">19</abbr></button><button class="react-calendar__tile react-calendar__tile--now react-calendar__month-view__days__day" disabled="" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 20, 2023">20</abbr></button><button class="react-calendar__tile react-calendar__tile--active react-calendar__tile--range react-calendar__tile--rangeStart react-calendar__tile--rangeEnd react-calendar__tile--rangeBothEnds react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 21, 2023">21</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 22, 2023">22</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 23, 2023">23</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 24, 2023">24</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 25, 2023">25</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 26, 2023">26</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 27, 2023">27</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 28, 2023">28</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 29, 2023">29</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 30, 2023">30</abbr></button><button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="December 31, 2023">31</abbr></button></div></div></div></div></div></div></div><div class="selected-date">Selected date: Thu Dec 21 2023<button class="go-to">Go to Today</button></div></div></div></div><div><div class="diet-container"><div class="diet-title"><div><h1>DIETARY INFORMATION</h1></div><div class="eight-columns"><table><thead><tr><th><input type="checkbox">Allergic</th><th><input type="checkbox">Cardiac</th><th><input type="checkbox">Diabetic</th><th><input type="checkbox">Gluten-free</th><th><input type="checkbox">Lactose-free</th><th><input type="checkbox">Vegan</th><th><input type="checkbox">Vegetarian</th><th><input type="checkbox">Dysphagic</th></tr></thead><tbody><tr><td><input type="checkbox">egg</td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">liquid-thin</td></tr><tr><td><input type="checkbox">fish</td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">nectar-thick</td></tr><tr><td><input type="checkbox">nut</td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">honey-thick</td></tr><tr><td><input type="checkbox">soy</td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">pudding-thick</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">pureed</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">minced</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="checkbox">soft</td></tr></tbody></table></div></div></div></div><div><div class="outer-menu-container"><div class="menu-container"><div class="meal">Breakfast<div class="drinks-additions"><div><div class="drinks">Drinks</div><div class="drink-items"><div><input type="checkbox">apple juice</div><div><input type="checkbox">orange juice</div><div><input type="checkbox">prune juice</div></div></div><div><div class="additions">Additions</div><div class="addition-items"><div><input type="checkbox">milk</div><div><input type="checkbox">milkette</div><div><input type="checkbox">cream</div><div><input type="checkbox">honey</div><div><input type="checkbox">sugar</div><div><input type="checkbox">Splenda</div></div></div></div></div><div class="meal">Lunch<div class="drinks-additions"><div><div class="drinks">Drinks</div><div class="drink-items"><div><input type="checkbox">apple juice</div><div><input type="checkbox">orange juice</div><div><input type="checkbox">prune juice</div></div></div><div><div class="additions">Additions</div><div class="addition-items"><div><input type="checkbox">milk</div><div><input type="checkbox">milkette</div><div><input type="checkbox">cream</div><div><input type="checkbox">honey</div><div><input type="checkbox">sugar</div><div><input type="checkbox">Splenda</div></div></div></div></div><div class="meal">Dinner<div class="drinks-additions"><div><div class="drinks">Drinks</div><div class="drink-items"><div><input type="checkbox">apple juice</div><div><input type="checkbox">orange juice</div><div><input type="checkbox">prune juice</div></div></div><div><div class="additions">Additions</div><div class="addition-items"><div><input type="checkbox">milk</div><div><input type="checkbox">milkette</div><div><input type="checkbox">cream</div><div><input type="checkbox">honey</div><div><input type="checkbox">sugar</div><div><input type="checkbox">Splenda</div></div></div></div></div></div></div></div><div><div class="outer-menu-container"><div class="menu-container"><div class="main-sides"><div><div class="main">Main</div><div class="main-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="sides">Sides</div><div class="side-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="replacement">Ensure Meal Replacement<div><input type="checkbox">Chocolate</div><div><input type="checkbox">Vanilla</div></div></div></div><div class="main-sides"><div><div class="main">Main</div><div class="main-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="sides">Sides</div><div class="side-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="replacement">Ensure Meal Replacement<div><input type="checkbox">Chocolate</div><div><input type="checkbox">Vanilla</div></div></div></div><div class="main-sides"><div><div class="main">Main</div><div class="main-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="sides">Sides</div><div class="side-items"><div><input type="checkbox">1</div><div><input type="checkbox">2</div><div><input type="checkbox">3</div></div></div><div><div class="replacement">Ensure Meal Replacement<div><input type="checkbox">Chocolate</div><div><input type="checkbox">Vanilla</div></div></div></div></div></div></div><div class="outer-footer-container"><div class="legend-container"><div class="legend"><div> Legend:</div></div><div class="icon-desc"><div class="icon"><img src="./React App_files/Frame (1).svg"><div>Vegetarian</div></div><div class="icon"><img src="./React App_files/Frame.svg"><div>Vegan</div></div><div class="icon"><img src="./React App_files/Frame (2).svg"><div>Allergy</div></div></div></div><div class="submit-container"><div class="submit"><input type="submit" class="bigger-button"></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

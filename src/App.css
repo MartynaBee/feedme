@@ -1,10 +1,15 @@
 .App {
-	/* text-align: center; */
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
+
+.app-container {}
+
 .masterhead {
-	/* background-color: green; */
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 20px;
 	text-align: center;
 	display: flex;
@@ -20,34 +25,31 @@
 }
 
 .sub-head {
-	width: 1500px;
-	/* background-color: blue; */
+	width: 100%;
+	background-color: #357960;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	margin: auto;
 	height: auto;
 }
-
 
 .block {
 	flex: 1;
 	/* Distributes the available space evenly among blocks */
 	max-width: 400px;
 	height: auto;
-	/* background-color: lightblue; */
 	margin: 0 5px;
 	display: flex;
 	justify-content: center;
-	/* Aligns content horizontally */
 	align-items: center;
-	/* Aligns content vertically */
 	flex-direction: column;
 }
 
 .logo-name {
 	margin-top: 20px;
-	margin-left: -180px;
+	margin-left: -150px;
+	line-height: 15%;
 }
 
 .small-logo {
@@ -56,65 +58,108 @@
 
 .hospital-name {
 	margin-top: 10px;
+	color: white;
 }
 
 .hello {
-	color: rgb(74, 112, 17);
+	color: white;
 	font-size: 30px;
 }
 
 .time-date {
-	margin-right: -250px;
+	margin-right: -150px;
+	color: white;
+	line-height: 10%;
+}
+
+
+
+
+
+.body {
+	background-image: url('../public/veggieframe.jpeg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
 }
 
 .diet-container {
-	/* background-color: yellow; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
+
+:where(.css-dev-only-do-not-override-2rgkd4).ant-picker-calendar .ant-picker-cell {
+	padding: 1px;
+}
+
+.ant-picker-calendar-header .ant-picker-calendar-year-select {
+	display: none;
+}
+
+.ant-picker-calendar-mode-switch {
+	display: none;
+}
+
+.calendar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	flex-direction: column;
+}
+
+.calendar-container {
+	width: 350px;
+	background: #357960;
+	padding: 5px;
+	margin-top: 20px;
+}
+
 
 .diet-title {
-	color: red;
-	text-align: center;
-	border: 5px solid red;
-	width: 80%;
-	padding: 10px;
-	font-size: 28px;
-}
-
-table {
-	width: 100%;
-	table-layout: fixed;
-}
-
-th,
-td {
-	width: calc(100% / 7);
-	/* Divide the table width equally among columns */
-	text-align: center;
-}
-
-.eight-columns {
-	width: 1500px;
-	background-color: pink;
-	font-size: 20px;
-	;
-	margin: auto;
-	justify-content: center;
 	color: black;
+	text-align: center;
+	border: 6px solid #92a143;
+	border-radius: 10px;
+	width: 1100px;
+	font-size: 28px;
+	margin: 25px;
+	height: 750px;
+}
+
+
+.diet-type {
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	
+}
+
+.diet-details {
+	text-align: left;
+}
+
+
+
+.full-menu {
+	border: 6px #357960 solid;
+	border-radius: 10px;
+	width: 900px;
+	font-size: 20px;
+	justify-content: center;
+	margin: 20px auto;
 }
 
 .outer-menu-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 0px ;
 }
 
 .menu-container {
-	/* background-color: rebeccapurple; */
 	width: 80%;
 	display: flex;
 	justify-content: space-evenly;
@@ -124,32 +169,28 @@ td {
 	align-items: center;
 }
 
-
 .meal {
-	color: green;
+	color: black;
 	font-size: 26px;
 	font-weight: 900;
-	margin: 20px;
-
 }
 
 .drinks-additions {
 	color: black;
 	font-weight: normal;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	display: flex;
 	justify-content: space-between;
-	width: 200px;
+	width: 250px;
 	padding: 10px;
 }
 
 .drink-items,
 .addition-items {
 	color: black;
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 14px;
-	font-weight: 300;
 	display: inline-flex;
 	flex-direction: column;
 }
@@ -162,7 +203,6 @@ td {
 .main {
 	text-decoration: underline;
 	padding: 20px;
-	
 }
 
 .sides {
@@ -174,43 +214,49 @@ td {
 	padding: 20px;
 }
 
-.outer-footer-container{
+.outer-footer-container {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
-	
+	background-color: #357960;
+
 }
 
-.legend-container{
-	border: 1px solid green;
+.legend-container {
+	border: 4px solid #92a143;
+	background-color: white;
+	border-radius: 10px;
 	display: flex;
-	padding:10px;
-	margin:20px;
+	padding: 10px;
+	margin: 20px;
 	flex-direction: column;
 
 }
 
-.legend{
+.legend {
 	text-decoration: underline;
 	font-size: 24px;
 }
 
-.icon-desc{
+.icon-desc {
 	display: flex;
 
 }
 
-.icon{
-padding:12px;
-}
- 
-.submit-container{
-display: flex;
-align-items:flex-end;
-margin: 20px;
+.icon {
+	padding: 12px;
 }
 
-.bigger-button{
-	font-size: 18px; /* Increase font size */
-    padding: 10px 20px;
+.submit-container {
+	display: flex;
+	align-items: flex-end;
+	margin: 20px;
+}
+
+.bigger-button {
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: #white;
+	border: 2px solid #92a143;
+	border-radius: 10px;
 }

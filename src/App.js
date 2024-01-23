@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import Header from "./header";
-import Diet from "./diet";
-import BodyA from "./BodyA";
-import BodyB from './BodyB';
 import Footer from './footer';
+import Body from './Body';
+
+import Diet from './Diet';
+import jsonDietData from './API/diet.json'
 
 
 function App() {
@@ -25,30 +26,31 @@ function App() {
   return (
 
     <div className="App">
-      <div className="header">
-        <Header
-          hospitalLogo={hospitalLogo}
-          hospitalName={hospitalName}
-          patientName={patientName}
-          currentDate={currentDate}
-          currentTime={currentTime}
-          dayOfWeek={dayOfWeek}
+      <div className='app-container'>
 
-        />
-      </div>
-      <div>
-        <Diet>
-        </Diet>
-      </div>
-      <div>
-        <BodyA>
 
-        </BodyA>
+        <div className="header">
+          <Header
+            hospitalLogo={hospitalLogo}
+            hospitalName={hospitalName}
+            patientName={patientName}
+            currentDate={currentDate}
+            currentTime={currentTime}
+            dayOfWeek={dayOfWeek} />
         </div>
+
+
         <div>
-          <BodyB></BodyB>
+          <Body></Body>
         </div>
-        <Footer></Footer>
+
+        <div>
+          <Footer></Footer>
+        </div>
+
+
+
+      </div>
     </div>
 
   );

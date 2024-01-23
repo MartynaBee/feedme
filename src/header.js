@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 
-const Header = ({ hospitalName, patientName, currentDate, currentTime, hospitalLogo, dayOfWeek }) => {
+
+const Header = ({ hospitalName, patientName, hospitalLogo, dayOfWeek }) => {
+
+    const [currentDate, setCurrentDate] = useState(new Date());
+    const [currentTime, setCurrentTime] = useState(new Date());
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentTime(new Date());
+        }, 1000);
+        return () => clearInterval(intervalId);
+    },
+        []);
+
+
+
 
     return (
 
@@ -11,36 +26,29 @@ const Header = ({ hospitalName, patientName, currentDate, currentTime, hospitalL
                 <img src="./WBlogo.png"></img>
             </div>
 
-            
-                <div className="sub-head">
 
-                    <div class="block">
-                        <div className="logo-name">
-                            <img src={hospitalLogo} className="small-logo"></img>
-                            <p className="hospital-name">{hospitalName}</p>
-                        </div>
+            <div className="sub-head">
+
+                <div class="block">
+                    <div className="logo-name">
+                        <img src={hospitalLogo} className="small-logo"></img>
+                        <p className="hospital-name">{hospitalName}</p>
                     </div>
-
-                    <div class="block">
-                        <div className="hello">
-                            <p>Hello, {patientName}!</p>
-                        </div>
-                    </div>
-
-                    <div class="block">
-                        <div className="time-date">
-                            <p>{currentDate}</p>
-                            <p>{currentTime}</p>
-                        </div>
-                    </div>
-
                 </div>
 
-           
+                <div class="block">
+                    <div className="hello">
+                        <p>Hello, {patientName}!</p>
+                    </div>
+                </div>
 
-            <div className="thisweek">
-                <h2>"Week of "<input type="week"></input>"</h2>
-                <h3>{dayOfWeek}</h3>
+                <div class="block">
+                    <div className="time-date">
+                        <p>{currentTime.toDateString()}</p>
+                        <p>{currentTime.toLocaleTimeString()}</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -51,4 +59,5 @@ const Header = ({ hospitalName, patientName, currentDate, currentTime, hospitalL
 }
 
 
-export default Header; 
+
+export default Header;

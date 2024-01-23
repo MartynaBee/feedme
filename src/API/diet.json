@@ -1,0 +1,87 @@
+[
+    {
+        "dietType": "Allergic",
+        "listOfDietDetails": [
+            {
+                "code": "egg",
+                "label": "egg"
+            },
+            {
+                "code": "fish",
+                "label": "fish"
+            },
+            {
+                "code": "nut",
+                "label": "nut"
+            },
+            {
+                "code": "soy",
+                "label": "soy"
+            }
+        ]
+    },
+    {
+        "dietType": "Cardiac",
+        "listOfDietDetails": [
+        ]
+    },
+    {
+        "dietType": "Diabetic",
+        "listOfDietDetails": [
+        ]
+    },
+    {
+        "dietType": "Gluten-free",
+        "listOfDietDetails": [
+          ]
+    },
+    {
+        "dietType": "Lactose-free",
+        "listOfDietDetails": [
+           ]
+    },
+    {
+        "dietType": "Vegan",
+        "listOfDietDetails": [
+      ]
+    },
+    {
+        "dietType": "Vegetarian",
+        "listOfDietDetails": [
+     ]
+    },
+    {
+        "dietType": "Dysphagic",
+        "listOfDietDetails": [
+            {
+                "code": "liquid-thin",
+                "label": "liquid-thin"
+            },
+            {
+                "code": "nectar-thick",
+                "label": "nectar-thick"
+            },
+            {
+                "code": "honey-thick",
+                "label": "honey-thick"
+            },
+            {
+                "code": "pudding-thick",
+                "label": "pudding-thick"
+            },
+            {
+                "code": "pureed",
+                "label": "pureed"
+            },
+            {
+                "code": "minced",
+                "label": "minced"
+            },
+            {
+                "code": "soft",
+                "label": "soft"
+            }
+            
+        ]
+    }
+]
