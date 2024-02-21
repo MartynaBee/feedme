@@ -1,6 +1,5 @@
 import React from "react";
 import BodyA from "./BodyA";
-import BodyB from "./BodyB";
 import DietaryInformation from "./DietaryInformation";
 
 const Body = ({ }) => {
@@ -17,9 +16,6 @@ const Body = ({ }) => {
                         <BodyA></BodyA>
                     </div>
 
-                    <div>
-                        <BodyB></BodyB>
-                    </div>
 
 
 

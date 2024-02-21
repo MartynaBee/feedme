@@ -1,0 +1,26 @@
+[
+  {
+    "mealName": "Breakfast",
+    "drinks": ["apple juice", "orange juice", "prune juice", "tea", "coffee", "milk"],
+    "additions": ["milkette", "cream", "honey", "sugar", "Splenda"],
+    "mainItems": ["tomato & pepper omlette", "cream of wheat with fruit", "cereal"],
+    "sideItems": ["yogurt and fresh fruit", "fruit cup", "muffin", "toast", "boiled egg"],
+    "replacementOptions": ["chocolate", "vanilla"]
+  },
+  {
+    "mealName": "Lunch",
+    "drinks": ["apple juice", "orange juice", "prune juice", "tea", "coffee", "milk"],
+    "additions": ["milkette", "cream", "honey", "sugar", "Splenda"],
+    "mainItems": ["beef barley soup and crackers", "vegetable wrap","ham and cheese sandwich"],
+    "sideItems": ["fries", "chips", "soup"],
+    "replacementOptions": ["fruit cup", "yogurt"]
+  },
+  {
+    "mealName": "Dinner",
+    "drinks": ["apple juice", "orange juice", "prune juice", "tea", "coffee", "milk"],
+    "additions": ["milkette", "cream", "honey", "sugar", "Splenda"],
+    "mainItems": ["vegetable pot pie", "fish sticks and fries", "beef roast and potatoes"],
+    "sideItems": ["mashed potatoes", "rice", "vegetables"],
+    "replacementOptions": ["soup", "salad"]
+  }
+]

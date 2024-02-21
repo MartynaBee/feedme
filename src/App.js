@@ -4,15 +4,17 @@ import Header from "./header";
 import Footer from './footer';
 import Body from './Body';
 
-import Diet from './Diet';
-import jsonDietData from './API/diet.json'
+// import Diet from './Diet';
+// import jsonDietData from './API/diet.json'
+
+// import MealContainer from './MealContainer';
 
 
 function App() {
 
 
 
-  const hospitalName = 'St Peter Hospital';
+  const hospitalName = 'St Peter\'s Hospital';
   const patientName = 'John Doedoedorere';
   const currentDateTime = new Date();
   const currentDate = currentDateTime.toLocaleDateString();
@@ -21,7 +23,7 @@ function App() {
   const today = new Date();
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const dayOfWeek = daysOfWeek[today.getDay()];
-
+ 
 
   return (
 
@@ -38,7 +40,6 @@ function App() {
             currentTime={currentTime}
             dayOfWeek={dayOfWeek} />
         </div>
-
 
         <div>
           <Body></Body>

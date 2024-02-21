@@ -1,0 +1,26 @@
+[
+    {
+        "code": "apple juice",
+        "label": "apple juice"
+    },
+    {
+        "code": "orange juice",
+        "label": "orange juice"
+    },
+    {
+        "code": "prune juice",
+        "label": "prune juice"
+    },
+    {
+        "code": "coffee",
+        "label": "coffee"
+    },
+    {
+        "code": "tea",
+        "label": "tea"
+    },
+    {
+        "code": "milk",
+        "label": "milk"
+    }
+]
